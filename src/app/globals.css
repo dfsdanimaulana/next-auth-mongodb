@@ -25,3 +25,22 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.form {
+  @apply flex flex-col gap-4;
+}
+.form-title {
+  @apply text-3xl font-bold text-slate-100;
+}
+.form-label {
+  @apply text-sm text-slate-300;
+}
+.form-input {
+  @apply border text-slate-700 border-slate-500 bg-slate-100 rounded-md p-2 focus:outline-none;
+}
+.form-button {
+  @apply border rounded-lg bg-blue-500 hover:bg-blue-600 text-slate-200 px-3 py-2 font-bold mt-3;
+}
+.form-link {
+  @apply text-sm text-slate-100 text-center hover:text-blue-300 hover:underline;
+}
