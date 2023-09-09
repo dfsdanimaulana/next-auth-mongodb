@@ -41,7 +41,7 @@ export async function sendEmail({ email, emailType, userId }: any) {
                 emailType === 'verify'
                     ? 'Verify your email'
                     : 'Reset your password',
-            html: emailType === 'verify' ? `<a href="${verifyLink}">Verify email</a>` : `<a href="${resetLink}">Reset password</a>`
+            html: emailType === 'verify' ? `Copy this link to verify your email ${verifyLink}` : `Copy this link to reset your password ${resetLink}`
         }
 
         const mailResponse = await transport.sendMail(mailOptions)
